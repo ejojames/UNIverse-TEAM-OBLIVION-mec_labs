@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="landing-page">
+    <div class="glass-orb orb-1"></div>
+    <div class="glass-orb orb-2"></div>
+    
+    <div class="hero-section">
+        <h1>UNIverse</h1>
+        <p>Navigate your career through the stars.</p>
+    </div>
+
+    <div class="auth-container glass-card">
+        <div class="auth-toggle">
+            <button id="btn-login" class="active" onclick="toggleAuth('login')">Login</button>
+            <button id="btn-register" onclick="toggleAuth('register')">Register</button>
+        </div>
+
+        <!-- Login Form -->
+        <form id="login-form" class="auth-form active" onsubmit="handleLogin(event)">
+            <div class="input-group">
+                <input type="email" id="login-email" placeholder="Email" required>
+            </div>
+            <div class="input-group">
+                <input type="password" id="login-password" placeholder="Password" required>
+            </div>
+            <button type="submit" class="btn-primary">Enter UNIverse</button>
+        </form>
+
+        <!-- Register Form -->
+        <form id="register-form" class="auth-form" onsubmit="handleRegister(event)">
+            <div class="input-group">
+                <input type="text" id="reg-name" placeholder="Full Name" required>
+            </div>
+            <div class="input-group">
+                <input type="email" id="reg-email" placeholder="Email" required>
+            </div>
+            <div class="input-group">
+                <input type="password" id="reg-password" placeholder="Password" required>
+            </div>
+            <div class="input-group">
+                <input type="text" id="reg-goal" placeholder="Career Goal (e.g. Software Engineer)">
+            </div>
+            <button type="submit" class="btn-primary">Join the Starfleet</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
