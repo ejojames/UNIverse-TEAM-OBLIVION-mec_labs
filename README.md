@@ -1,5 +1,7 @@
 # UNIverse: Personalized Learning Roadmap Platform
 
+<img width="827" height="648" alt="Screenshot 2026-06-17 152853" src="https://github.com/user-attachments/assets/cd366438-7212-411f-9c0d-c8b25563f3c7" />
+
 UNIverse is a comprehensive learning platform designed to help students and professionals navigate their career paths through AI-curated roadmaps, automated assessments, and social learning features.
 
 ## Core Features
